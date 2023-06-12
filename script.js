@@ -12,11 +12,11 @@
       errorMessage = "Você excedeu o número máximo de tentativas. Por favor, tente novamente mais tarde.";
     }
 
-    else if (inputText.toLowerCase() === "vontade de dar") {
+    else if (inputText.toLowerCase() === "Amor") {
       localStorage.removeItem("attemptCounter");
       window.location.href = "index.html";
     } 
-    else if (inputText.toLowerCase() === "amor") {
+    else if (inputText.toLowerCase() === "Saudades") {
       localStorage.removeItem("attemptCounter");
       window.location.href = "index.html";
     } 
@@ -123,35 +123,4 @@
   
   prevNextMusic("init");
 
-  var slideIndex = 0;
-showSlide(slideIndex);
-
-function prevSlide() {
-  slideIndex--;
-  showSlide(slideIndex);
-}
-
-function nextSlide() {
-  slideIndex++;
-  showSlide(slideIndex);
-}
-
-function showSlide(index) {
-  var slides = document.getElementsByClassName("slide");
-
-  if (index >= slides.length) {
-    slideIndex = 0;
-  } else if (index < 0) {
-    slideIndex = slides.length - 1;
-  }
-
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[slideIndex].style.display = "block";
-}
-
-window.addEventListener("load", function() {
-    showSlide(slideIndex);
-  });
+  
